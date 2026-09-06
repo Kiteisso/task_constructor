@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Russian calligraphic cursive feel */
+  .font-cursive {
+    font-family: var(--font-cursive), 'Caveat', 'Brush Script MT', cursive, sans-serif;
+  }
+}
+
+/* Print styles for clean worksheet printing */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-document {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .watermark-print-hide {
+    display: none !important;
+  }
+}
+
+/* Subtle peaceful scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(240, 247, 242, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(130, 180, 150, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 155, 120, 0.6);
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Конструктор заданий по русскому языку",
+  "description": "Минималистичный онлайн-конструктор дидактических материалов и рабочих листов по русскому языку от Эльвиры",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
